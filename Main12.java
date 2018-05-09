@@ -24,6 +24,7 @@ public class Main12
         }
         finally
         {
+            int a= 1/0;
             System.out.println("Now, finally block is always executed");
         }
         /*

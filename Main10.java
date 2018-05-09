@@ -11,6 +11,7 @@ public class Main10
  
         for (int i = 0; i < s.length; i++)
         {
+            System.out.println("************************************************"); 
             //First Level try-catch block
             try
             {
@@ -21,7 +22,7 @@ public class Main10
                 try
                 {
                     //This statement may throw ArrayIndexOutOfBoundsException
-                    System.out.println(s[i+1]);   
+                   String r=  s[i+1];   
  
                     //third level try-catch block
                     try
@@ -32,16 +33,26 @@ public class Main10
                     {
                         System.out.println("NumberFormatException will not be caught here");
                     }
+                    finally{
+                        System.out.println("one");
+
+                    }
                 }
                 catch (NumberFormatException ex)
                 {
                     System.out.println("NumberFormatException will be caught here");
-                }
+                }finally{
+                        System.out.println("two");
+
+                    }
             }
             catch(Exception ex)
             {
                 System.out.println("This block catches all types of exceptions" + ex);
-            }
+            }finally{
+                        System.out.println("three");
+
+                    }
         }
     }
 }

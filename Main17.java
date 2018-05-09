@@ -2,14 +2,8 @@ public class Main17
 {
     public static void main(String[] args)
     {
-        try
-        {
-            methodWithThrow();
-        }
-        catch(NullPointerException ex)
-        {
-            System.out.println("NullPointerException Re-thrown in methodWithThrow() method will be handled here");
-        }
+       
+            methodWithThrow(); 
     }
  
     static void methodWithThrow()

@@ -2,7 +2,7 @@ public class Main14
 {
     public static void main(String[] args)
     {
-        System.out.println(methodReturningValue4());
+        System.out.println("from Main: " + methodReturningValue().toString);
     }
  
     static String methodReturningValue()
@@ -21,6 +21,7 @@ public class Main14
         finally
         {
             s = s + "return value from finally block";
+            System.out.println("from Finally: " + s);
         }
     }
 

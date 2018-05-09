@@ -2,6 +2,8 @@
 If a method is capable of throwing an exception that it could not handle, 
 then it should specify that exception using throws keyword. 
 It helps the callers of that method in handling that exception
+The main use of throws keyword in java is that an exception can be propagated through method calls.
+
 */
 public class Main18
 {
